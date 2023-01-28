@@ -1,0 +1,72 @@
+/* Colori da usare:  
+    #000000 nero
+    #282A3A blu scuro figo
+    #735F32 marrone sabbia
+    #C69749 sabbia chiaro
+*/
+
+body {
+  background-color: rgb(0, 0, 0);
+  padding: 1% 20%;
+}
+/* #contenitoreDisplay{
+    width: auto;
+    height: auto;
+} */
+#displayNumeri {
+  font-size: 4em;
+  text-align: right;
+  padding-right: 10px;
+  grid-area: display;
+  word-wrap: break-word;
+  position: relative;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  border: #282a3a solid 3px;
+  margin-bottom: 10px;
+}
+.testoCentrato {
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  position: relative;
+}
+.testoCentrato,
+.alto-contrasto {
+  color: white;
+  text-align: center;
+}
+
+.divBottoni {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-area: auto;
+  gap: 5px;
+  row-gap: 3px;
+}
+.contenitore {
+  position: relative;
+  margin: 20px;
+  background-color: #c69749;
+  padding: 20px 30px;
+  border-radius: 30px;
+  border-width: 3px;
+}
+button {
+  width: 30px 20px;
+  font-size: 1em;
+  padding: 2em;
+  border-color: white solid 3px;
+  border-radius: 20px;
+}
+
+button {
+  background-color: #282a3a;
+  color: white;
+}
+button:not(.tastiCalcoli) {
+  background-color: black;
+  color: white;
+}
+
